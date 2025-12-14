@@ -41,7 +41,7 @@ class AdvancedCountControl extends StatelessWidget {
     this.addButtonLabel = "افزودن به سبد خرید",
     this.maxReachedLabel = "حداکثر",
     this.height = 48,
-    this.width,
+    this.width = double.infinity,
 
     this.iconAdd,
     this.iconRemove,
@@ -50,7 +50,7 @@ class AdvancedCountControl extends StatelessWidget {
     this.onAddTap,
     this.style = const CountControlStyle(),
     this.numberFormatter,
-  });
+  }):  assert(maxQuantity >= currentQuantity, 'max quantity[$maxQuantity] must be equal or higher than current[$currentQuantity]');
 
   @override
   Widget build(BuildContext context) {
@@ -72,8 +72,8 @@ class AdvancedCountControl extends StatelessWidget {
   Widget _buildAddButton() {
     return SizedBox(
       key: const ValueKey('addButton'),
-      width: double.infinity,
-      height: double.infinity,
+      height: height,
+      width: width,
       child: ElevatedButton(
         onPressed: (isDisabled || isLoading) ? null : (onAddTap ?? onIncrease),
         style: ElevatedButton.styleFrom(
@@ -103,6 +103,8 @@ class AdvancedCountControl extends StatelessWidget {
 
     return Container(
       key: const ValueKey('counterControl'),
+      height: height,
+      width: width,
       decoration: BoxDecoration(
         color: style.backgroundColor,
         borderRadius: BorderRadius.circular(style.borderRadius),

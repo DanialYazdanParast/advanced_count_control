@@ -33,7 +33,7 @@ class ExamplePage extends StatefulWidget {
 
 class _ExamplePageState extends State<ExamplePage> {
   // متغیرهای وضعیت برای هر مثال
-  int qtyStandard = 0;
+  int qtyStandard = 10;
   int qtyCustomStyle = 2;
   int qtyNoAddBtn = 1;
   int qtyLoading = 0;
@@ -47,7 +47,7 @@ class _ExamplePageState extends State<ExamplePage> {
     return Scaffold(
       backgroundColor: const Color(0xFFF5F5F5),
       appBar: AppBar(
-        title: const Text('دموی پکیج Advanced Count Control'),
+        title: const Text('Advanced Count Control'),
         centerTitle: true,
         backgroundColor: Colors.white,
         elevation: 0,
@@ -60,6 +60,9 @@ class _ExamplePageState extends State<ExamplePage> {
           _buildSectionTitle('۱. حالت پیش‌فرض (ساده)'),
           AdvancedCountControl(
             currentQuantity: qtyStandard,
+            width: 250,
+            height: 80,
+            maxQuantity: 20,
             onIncrease: () => setState(() => qtyStandard++),
             onDecrease: () => setState(() => qtyStandard--),
           ),

@@ -1,11 +1,21 @@
 # Advanced Count Control 🛒
 
 A highly customizable and advanced counter widget for Flutter, designed specifically for e-commerce applications (similar to Digikala style).
+<<<<<<< Updated upstream
 
 It automatically handles various states like **"Add to Cart" button**, **Counter**, **Loading**, **Disabled**, and **Trash (Delete)** mode.
 
 <img src="https://github.com/user-attachments/assets/be57a904-5382-43f3-9454-9a69d30ed7fd" alt="Demo Banner" width="200">
 
+=======
+# Advanced Count Control 🛒
+
+A highly customizable and advanced counter widget for Flutter, designed specifically for e-commerce applications (similar to Digikala style).
+
+It automatically handles various states like **"Add to Cart" button**, **Counter**, **Loading**, **Disabled**, and **Trash (Delete)** mode.
+
+![Demo Banner](https://via.placeholder.com/800x400?text=Advanced+Count+Control+Demo)
+>>>>>>> Stashed changes
 
 ## ✨ Features
 
@@ -134,6 +144,15 @@ AdvancedCountControl(
 )
 ```
 
+<<<<<<< Updated upstream
+=======
+## 📸 Screenshots
+
+| Standard State | Custom Style | Disabled State |
+|----------------|--------------|----------------|
+| | | |
+
+>>>>>>> Stashed changes
 ## ❤️ Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
@@ -150,4 +169,8 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
+<<<<<<< Updated upstream
 Developed with ❤️ by **Danial YazdanParast**
+=======
+Developed with ❤️ by **Danial YazdanParast**
+>>>>>>> Stashed changes
